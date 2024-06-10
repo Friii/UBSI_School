@@ -1,0 +1,488 @@
+html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+    
+}
+
+body{
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 20px;
+}
+
+nav div img{
+    width: 200px;
+    margin: 1rem;
+    display: flex;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #A2A2A2;
+    margin: 3rem;
+}
+
+nav ul li a:hover{
+    color: #1E3B72;
+}
+
+.menu-icon{
+    display: none;
+    font-size: 24px;
+}
+
+.wrapper {
+    background-color: #1E3B72;
+    width: 90%;
+    margin-left: -41px;
+    height: 230px;
+    padding: 1rem;
+    padding-left: 150px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    color: #ffffff;
+}
+
+.wrapper a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 30px;
+    position: relative;
+    top: 20px;
+    background-color: #0084FF;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.wrapper a:hover{
+    background-color: #0069D9;
+    color: black;
+}
+
+.wrapper h2,p{
+    line-height: 15px;
+}
+
+.anak img{
+    display: flex;
+    width: 508px;
+    height: 296px;
+    position: relative;
+    left: 550px;
+    bottom: 189px;    
+}
+
+#hero-2{
+    margin: 120px;
+}
+
+
+.misi p{
+    list-style-type: circle;
+}
+
+#hero-2 img{
+    display: flex;
+    width: 489px;
+    height: 290px;
+    display: flex;
+    position: relative;
+    left: 650px;
+    bottom: 315px;
+}
+
+#hero-3{
+    background-color: #1E3B72;
+    bottom: 340px;
+    left: 505px;
+    position: relative;
+    width: 400px;
+    height: 100px;
+    justify-items: center;
+    border-radius:15px;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    -ms-border-radius:15px;
+    -o-border-radius:15px;
+}
+
+.bakat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding-top: 20px;
+    color: #ffffff;
+    top:13px;
+    position: relative;
+    right: 0;
+}
+
+#vertikal-line{
+    width: 1px;
+    height: 50px;
+    background-color: #ffffff;
+    position: relative;
+    left: 65px;
+    bottom: 75px;
+    
+}
+
+.mandiri{
+    position: relative;
+    left:10px;
+    padding-bottom: 50px;
+}
+.mandiri p {
+    position: relative;
+    right: 14px;
+}
+
+.cerdas,.kreatif{
+    padding-bottom: 50px;
+}
+
+.cerdas p {
+    position: relative;
+    right: 7px;
+}
+
+
+#vertikal-line2{
+    width: 1px;
+    height: 50px;
+    background-color: #ffffff;
+    position: relative;
+    left: 65px;
+    bottom: 75px;
+    
+}
+
+.kreatif p {
+    position: relative;
+    right: 6px;
+    padding-bottom: 50px;
+}
+
+#hero-4{
+    background-color:#1E3B72;
+    height: 82vh;
+    position: relative;
+    bottom: 250px;
+    width: 100%;
+}
+
+.judul{
+    display: flex;
+    position: relative;
+}
+
+.lines{
+    width: 40%;
+    height: 45px;
+    position: relative;
+    left: 425px;
+    top: 40px;
+}
+
+.lines::after, .lines::before{
+    content: '';
+    position: absolute;
+    margin: -30px;
+    height: 1px;
+    background: #ffffff;
+    width: 45%;
+    top: 45%;
+    
+}
+
+.lines::after{
+    left: 0;
+}
+
+.lines::before{
+    right: 0;
+}
+
+.judul h2{
+    position: relative;
+    left: 45%;
+    color: #ffffff;
+}
+
+.logo3{
+    width: 30px;
+    height: 87px;
+    position: relative;
+    left: 40%;
+}
+
+.logo3 img{
+    width: 120px;
+    position: relative;
+    bottom: 60px;
+}
+
+.prestasi{
+    display: grid;
+    gap: 8rem;
+    grid-template-columns: repeat(3,1fr);
+    margin: 80px;
+    position: relative;
+    right: 92%;
+    bottom: 100px;
+    color: #ffffff;
+    
+}
+
+.prestasi img{
+    width: 350px;
+    position: relative;
+    
+}
+
+.prestasi p{
+    font-size: 20px;
+    line-height: 30px;
+    margin: 50px;
+    position: relative;
+    right: 50px;
+    bottom: 40px;
+}
+
+.tentang-lokasi{
+    display: flex;
+}
+
+#hero-5{
+    margin-bottom: -100px;
+}
+
+.tentang{
+    margin: 0 100px 0 400px ;
+    font-size: large;
+    position: relative;
+    right: 300px;
+    bottom: 200px;
+    line-height: 2rem;
+}
+
+.tentang h2{
+    padding-bottom: 20px;
+}
+
+.tentang p{
+    line-height: 2rem;
+}
+
+.tentang a{
+    color : black;
+}
+
+.lokasi{
+    position: relative;
+    right: 200px;
+    bottom: 200px;
+}
+
+.kontak{
+    display: flex;
+    background-color: #1E3B72;
+    color: #ffffff;
+    height: 14vh;
+    padding-bottom: 48px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.email{
+    display: flex;
+    position: relative;
+    gap: 0.5rem;
+    position: relative;
+    top: 25px;
+}
+
+.email i{
+    position: relative;
+    top: 25px;
+}
+
+.copyright{
+    position: relative;
+    left: 700px;
+    top: 25px;
+}
+
+.email-copy{
+    position: relative;
+    top: 25px;
+    display: flex;
+    left: 50px;
+}
+
+@media only screen and (max-width: 768px){
+    nav{
+        flex-wrap: wrap;
+    }
+
+    nav ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul.hidden{
+        display: none;
+    }
+    .menu-icon{
+    display: flex;
+    align-items: center;
+    }
+
+    html{
+        font-size: 67.25%;
+    }
+
+    .wrapper{
+        width: 82%;
+        height: 12rem;
+    }
+    .wrapper img{
+        display: none;
+    }
+    .wrapper p{
+        font-size:small;
+        position: relative;
+        right: 100px;
+        bottom: 30px;
+    }
+
+    .wrapper h2{
+        font-size:small;
+        position: relative;
+        right: 100px;
+        bottom: 30px;
+    }
+    
+    .wrapper a{
+        font-size:small;
+        position: relative;
+        right: 100px;
+        top: -20px;
+    }
+
+    #hero-2{
+        flex-direction:column;
+        position: relative;
+        left: 100px;
+    }
+
+    .visi h3{
+        position: relative;
+        left: 45px;
+        font-size: 20px;
+    }
+
+    .visi p {
+        line-height: 15px;
+        font-size: 16px;
+    }
+
+    .misi h3{
+        position: relative;
+        left: 45px;
+        font-size: 20px;
+    }
+
+    .misi p{
+        line-height: 15px;
+        font-size: 16px;
+        right: 40px;
+        position: relative;
+        right: 20px;
+        padding-right: 20px;
+        list-style: georgian;
+        
+    }
+
+    #hero-2 .visi,
+    #hero-2 .misi{
+       text-align: left; 
+       text-decoration: none;
+       position: relative;
+       right: 100px;
+       bottom: 40px;
+    }
+
+    #hero-2 img{
+        position: relative;
+        right: 200px;
+        left: 250px;
+        bottom: 300px;
+        width:50%;
+        height: 200px;
+    }
+
+    #hero-3{
+        position: relative;
+        left: 100px;
+        font-size: 16px;
+    }
+
+    #hero-4{
+        height: 100vh;
+    }
+
+    .judul{
+        right: 30px;
+    }
+
+    .lines{
+        position: relative;
+        right: 20px;
+        left: 200px;
+    }
+    .logo3 img{
+        position: relative;
+        top: -50px;
+        left: -15px;
+        right: 60px;
+        width: 80px;
+        height: 87px;
+    }
+
+
+    
+    
+
+}
+
+
+
+
+
