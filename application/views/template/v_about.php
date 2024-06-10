@@ -3,7 +3,7 @@
     <h2>KEGIATAN BELAJAR MENGAJAR</h2>
     <p>Job Fair Education SMK Negeri 1 Surabaya cukup</p>
     <p>antusias diikuti ratusan siswa</p>
-    <a href="#">JOIINNNNN CUY!!</a>
+    <a href="#">ini about</a>
     <div class="anak">
         <img src="<?php echo base_url();?>assets/img/anak.jpeg" alt="anak">
     </div>
