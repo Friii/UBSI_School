@@ -8,5 +8,12 @@ class Ubsi extends CI_Controller
         $this->load->view('template/v_about');
         $this->load->view('template/v_footer');
     }
+
+    public function dashboard(){
+        $this->load->view('dashboard/header');
+        $this->load->view('dashboard/aside');
+        $this->load->view('dashboard/dashboard'); 
+        $this->load->view('dashboard/footer');
+}
 }
 ?>
