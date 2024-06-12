@@ -12,15 +12,15 @@
     <div class="container">
     <nav>
         <div class="logo">
-           <a href="<?php echo base_url().'#'?>"><img src="<?php echo base_url()?>assets/img/logo.png" alt=""></a>
+           <a href="<?php echo base_url('ubsi/index')?>"><img src="<?php echo base_url()?>assets/img/logo.png" alt=""></a>
         </div>
         <div class="menu-icon" id="menu-icon">
             <i class="fa-solid fa-bars"></i>
             </div>
             <ul id="menu-list" class="hidden">
                 <li><a href="<?php echo base_url().'#'?>">Akademik</a></li>
-                <li><a href="<?php echo base_url().'#'?>">Program</a></li>
-                <li><a href="<?php echo base_url().'#'?>">Fasilitas</a></li>
+                <li><a href="<?= base_url('ubsi/jurusan');?>">Program</a></li>
+                <li><a href="<?= base_url('ubsi/fasilitas'); ?>">Fasilitas</a></li>
                 <li><a href="<?php echo base_url().'#'?>">Hubungi</a></li>
                 <li><a href="<?php echo base_url().'#'?>">Login</a></li>
             </ul>
