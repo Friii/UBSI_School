@@ -9,7 +9,7 @@
     </div>
 </div>
 </section>
-
+<!-- Membuat bagian landing page -->
 <section id="hero-2">
     <div class="visi">
         <h3>VISI</h3>
@@ -73,6 +73,7 @@
     </div>
 </section>
 
+<!-- Profile Sekolah -->
 <section id="hero-5">
 <div class="tentang-lokasi">
     <div class="tentang">
