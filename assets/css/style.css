@@ -23,9 +23,13 @@ nav ul{
     display: flex;
     list-style: none;
     align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-    margin: 20px;
+    padding: 2px;
+    margin: 2px;
+}
+
+.logo {
+    position: relative;
+    left: 40px; /* Ubah angka ini sesuai dengan jarak yang diinginkan */
 }
 
 nav div img{
@@ -52,7 +56,7 @@ nav ul li a:hover{
 
 .wrapper {
     background-color: #1E3B72;
-    width: 90%;
+    width: 92%;
     margin-left: -41px;
     height: 230px;
     padding: 1rem;
@@ -90,8 +94,18 @@ nav ul li a:hover{
     width: 508px;
     height: 296px;
     position: relative;
-    left: 550px;
-    bottom: 189px;    
+    margin-left: 700px;
+    bottom: 218px;    
+}
+
+.ngaji img{
+    display: flex;
+    width: 508px;
+    height: 296px;
+    position: relative;
+    margin-left: 50px;
+    bottom: 228px;    
+    margin-bottom: 20px;
 }
 
 #hero-2{
@@ -475,6 +489,7 @@ nav ul li a:hover{
         width: 80px;
         height: 87px;
     }
+
 
 
     

@@ -1,9 +1,9 @@
 <section id="hero">
 <div class="wrapper">
     <h2>KEGIATAN BELAJAR MENGAJAR</h2>
-    <p>Job Fair Education SMK Negeri 1 Surabaya cukup</p>
+    <p> Guru menyampaikan materi pembelajaran kepada siswa dengan menggunakan <br></br> berbagai metode seperti ceramah, diskusi kelompok, presentasi, dan aktivitas praktik.</p>
     <p>antusias diikuti ratusan siswa</p>
-    <a href="#">ini about</a>
+    <a href="#">Daftar Sekarang</a>
     <div class="anak">
         <img src="<?php echo base_url();?>assets/img/anak.jpeg" alt="anak">
     </div>
@@ -25,7 +25,10 @@
         <li><p>Menghargai ide dan kreatifitas seluruh komponen sekolah yangg bersifat positif</p></li>
         </ul>    
     </div>
-        <img src="<?php echo base_url()?>assets/img/ngaji.png" alt="">
+    <div class="ngaji">
+    <img src="<?php echo base_url()?>assets/img/ngaji.png" alt="ngaji">
+
+    </div>
 </section>
 
 <section id="hero-3">

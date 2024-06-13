@@ -12,7 +12,7 @@
     <div class="container">
     <nav>
         <div class="logo">
-           <a href="<?php echo base_url('ubsi/index')?>"><img src="<?php echo base_url()?>assets/img/logo.png" alt=""></a>
+           <a href ="<?php echo base_url('ubsi/index')?>"><img src="<?php echo base_url()?>assets/img/logo.png" alt=""></a>
         </div>
         <div class="menu-icon" id="menu-icon">
             <i class="fa-solid fa-bars"></i>
