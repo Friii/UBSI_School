@@ -61,16 +61,16 @@
         </div>
         <div class="prestasi">
             <div class="anak1">
-                <img src="<?php echo base_url();?>assets/img/anak.jpeg" alt="anak">
-                <p>Kembali meraih 4 Medali perak dan 2 perunggu pada kejuaraan ASPN</p>
+                <img src="<?php echo base_url();?>assets/img/KELULUSAN.png" alt="kelulusan">
+                <h3>Pengumuman Kelulusan Siswa Kelas 12 Tahun 2024</h3>
             </div>
             <div class="anak2">
-                <img src="<?php echo base_url();?>assets/img/anak.jpeg" alt="anak">
-                <p>Kembali meraih 4 Medali perak dan 2 perunggu pada kejuaraan ASPN</p>
+                <img src="<?php echo base_url();?>assets/img/lomba.jpeg" alt="lomba">
+                <h3>Meraih Medali Emas Pada Ajang Perlombaan Robotika</h3>
             </div>
             <div class="anak3">
-                <img src="<?php echo base_url();?>assets/img/anak.jpeg" alt="anak">
-                <p>Kembali meraih 4 Medali perak dan 2 perunggu pada kejuaraan ASPN</p>
+                <img src="<?php echo base_url();?>assets/img/openregist.png" alt="open">
+                <h3>Kami Kembali Membuka Pendaftaran Siswa Baru Tahun Ajaran 2024/2025</h3>
             </div>
         </div>
     </div>
@@ -81,7 +81,7 @@
 <div class="tentang-lokasi">
     <div class="tentang">
     <h2>Tentang Kami</h2>
-    <p>Sekolah Kejuruan di Surabaya,Jawa Timur yang berlokasi di Jl. Smea No.04, Wonokromo Surabaya. SMK Negeri 1 Surabaya bertekad mencapai perbaikan yang berkesinambungan berdasarkan sistem manajemen mutu ISO 9001:2008. Telp. 031-8292038 FAX. 031-8292039. Emaill : info@smkn1-sby.sch.id</p>
+    <p>Sekolah Kejuruan di Bekasi,Jawa Barat yang berlokasi di Jl. Lkr.Utara No.8,Perwira,Kec Bekasi Utara,Kota Bks,Jawa Barat UBSI SCHOOL bertekad mencapai perbaikan yang berkesinambungan berdasarkan sistem manajemen mutu ISO 9001:2008. Telp. 031-8292038 FAX. 031-8292039. Emaill : info@ubsischool.sch.id</p>
     <a href=""><i class="fa-brands fa-instagram fa-2xl"></i></a>
     <a href=""><i class="fa-brands fa-youtube fa-2xl"></i></a>
     </div>

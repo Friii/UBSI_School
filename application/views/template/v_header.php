@@ -22,7 +22,6 @@
                 <li><a href="<?= base_url('ubsi/jurusan');?>">Program</a></li>
                 <li><a href="<?= base_url('ubsi/fasilitas'); ?>">Fasilitas</a></li>
                 <li><a href="<?php echo base_url().'#'?>">Hubungi</a></li>
-                <li><a href="<?php echo base_url().'#'?>">Login</a></li>
             </ul>
             
     </nav>

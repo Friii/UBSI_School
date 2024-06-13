@@ -29,7 +29,8 @@ nav ul{
 
 .logo {
     position: relative;
-    left: 40px; /* Ubah angka ini sesuai dengan jarak yang diinginkan */
+    left: 80px;
+     /* Ubah angka ini sesuai dengan jarak yang diinginkan */
 }
 
 nav div img{
@@ -92,10 +93,10 @@ nav ul li a:hover{
 .anak img{
     display: flex;
     width: 508px;
-    height: 296px;
+    height: 320px;
     position: relative;
     margin-left: 700px;
-    bottom: 218px;    
+    bottom: 248px;    
 }
 
 .ngaji img{
@@ -130,7 +131,7 @@ nav ul li a:hover{
 #hero-3{
     background-color: #1E3B72;
     bottom: 340px;
-    left: 505px;
+    left: 550px;
     position: relative;
     width: 400px;
     height: 100px;
@@ -202,7 +203,7 @@ nav ul li a:hover{
 
 #hero-4{
     background-color:#1E3B72;
-    height: 82vh;
+    height: 68vh;
     position: relative;
     bottom: 250px;
     width: 100%;
@@ -211,13 +212,14 @@ nav ul li a:hover{
 .judul{
     display: flex;
     position: relative;
+    margin-right: 50px;
 }
 
 .lines{
     width: 40%;
-    height: 45px;
+    height: 35px;
     position: relative;
-    left: 425px;
+    left: 445px;
     top: 40px;
 }
 
@@ -265,8 +267,8 @@ nav ul li a:hover{
     grid-template-columns: repeat(3,1fr);
     margin: 80px;
     position: relative;
-    right: 92%;
-    bottom: 100px;
+    right: 70%;
+    bottom: 120px;
     color: #ffffff;
     
 }
