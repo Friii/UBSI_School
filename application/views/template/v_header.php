@@ -18,10 +18,10 @@
             <i class="fa-solid fa-bars"></i>
             </div>
             <ul id="menu-list" class="hidden">
-                <li><a href="<?php echo base_url().'#'?>">Akademik</a></li>
+                <li><a href="<?php echo base_url().'ubsi/index'?>">Akademik</a></li>
                 <li><a href="<?= base_url('ubsi/jurusan');?>">Program</a></li>
                 <li><a href="<?= base_url('ubsi/fasilitas'); ?>">Fasilitas</a></li>
-                <li><a href="<?php echo base_url().'#'?>">Hubungi</a></li>
+                <li><a href="<?php echo base_url().'ubsi/contact'?>">Hubungi</a></li>
             </ul>
             
     </nav>

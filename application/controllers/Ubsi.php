@@ -26,5 +26,12 @@ class Ubsi extends CI_Controller
         $this->load->view('template/v_jur');
   
     }
+    public function contact(){
+        $this->load->view('template/v_contact');
+    
+    }
+    
+    
 }
+
 ?>

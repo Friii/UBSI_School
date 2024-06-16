@@ -93,10 +93,27 @@ nav ul li a:hover{
 .anak img{
     display: flex;
     width: 508px;
-    height: 320px;
+    height: 300px;
     position: relative;
     margin-left: 700px;
-    bottom: 248px;    
+    bottom: 218px;    
+}
+.anak-contact img{
+    width: 708px;
+    height: 400px;
+    margin-left: 400px;
+    margin-top: 20px;
+
+}
+
+
+.roadmap img{
+    display: flex;
+    width: 508px;
+    height: 300px;
+    position: relative;
+    margin-left: 700px;
+    bottom: 218px;    
 }
 
 .ngaji img{
