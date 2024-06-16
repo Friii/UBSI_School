@@ -23,14 +23,15 @@
           <!-- small box -->
           <div class="small-box bg-aqua">
             <div class="inner">
-              <h3>150</h3>
+              <h3><?= $jumlah_siswa;?>
+              </h3>
 
-              <p>New Orders</p>
+              <p>Jumlah Siswa</p>
             </div>
             <div class="icon">
               <i class="ion ion-bag"></i>
             </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="siswa" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -40,7 +41,7 @@
             <div class="inner">
               <h3>53<sup style="font-size: 20px">%</sup></h3>
 
-              <p>Bounce Rate</p>
+              <p>Guru</p>
             </div>
             <div class="icon">
               <i class="ion ion-stats-bars"></i>
@@ -53,9 +54,12 @@
           <!-- small box -->
           <div class="small-box bg-yellow">
             <div class="inner">
-              <h3>44</h3>
-
-              <p>User Registrations</p>
+             
+              
+              <h3>20
+              </h3>
+              
+              <p>Jurusan</p>
             </div>
             <div class="icon">
               <i class="ion ion-person-add"></i>

@@ -1,13 +1,33 @@
 <?php
 
 class Mahasiswa extends CI_Controller{
+    public function __construct(){
+        parent::__construct();
+        $this->load->model('m_mahasiswa');
+    }
+
     public function index(){
+        $ar = $this->m_mahasiswa->jumlah_siswa();
+        $siswa = $ar->num_rows();
+
+        $data = array(
+            'jumlah_siswa' => $siswa
+        );
+        $this->load->view('dashboard/header');
+        $this->load->view('dashboard/aside');
+        $this->load->view('dashboard/dashboard',$data);
+        $this->load->view('dashboard/footer'); 
+    
+    }
+
+    public function siswa(){
         $data['mahasiswa'] = $this->m_mahasiswa->tampil_data()->
         result();
         $this->load->view('dashboard/header');
         $this->load->view('dashboard/aside');
         $this->load->view('mahasiswa',  $data);
         $this->load->view('dashboard/footer'); 
+        
     
     }
 

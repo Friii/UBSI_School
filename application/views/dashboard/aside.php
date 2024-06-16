@@ -25,37 +25,37 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
-        <li class="active treeview">
-          <a href="#">
+        <li class="">
+          <a href="<?= base_url().'mahasiswa/index'?>">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
         </li>
-        <li class="active treeview">
-          <a href="#">
+        <li class="">
+          <a href="<?= base_url().'mahasiswa/siswa'?>">
             <i class="fa fa-graduation-cap"></i> <span>Siswa</span>
           </a>
         </li>
-        <li class="active treeview">
+        <li class="">
           <a href="#">
             <i class="fa fa-user"></i> <span>Guru</span>
           </a>
         </li>
-        <li class="active treeview">
+        <li class="">
           <a href="#">
             <i class="fa fa-book"></i> <span>Jadwal Kelas</span>
           </a>
         </li>
-        <li class="active treeview">
+        <li class="">
           <a href="#">
             <i class="fa fa-university"></i> <span>Jurusan</span>
           </a>
         </li>
-        <li class="active treeview">
+        <li class="">
           <a href="#">
             <i class="fa fa-lock"></i> <span>Ganti Password</span>
           </a>
         </li>
-        <li class="active treeview">
+        <li class="">
           <a href="#">
             <i class="fa fa-sign-out"></i> <span>Logout</span>
           </a>
