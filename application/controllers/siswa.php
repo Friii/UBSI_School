@@ -9,6 +9,16 @@ class siswa extends CI_Controller{
         $this->load->view('siswa', $data); 
         $this->load->view('dashboard/footer');
     }
+
+    public function calonsiswa(){
+        $data['mahasiswa'] = $this->m_calonsiswa->siswa()->
+            result();
+        $this->load->view('dashboard/header');
+        $this->load->view('dashboard/aside');
+        $this->load->view('siswa', $data); 
+        $this->load->view('dashboard/footer');
+    }
+
 }
 
 ?>

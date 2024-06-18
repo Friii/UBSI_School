@@ -13,4 +13,5 @@ class M_mahasiswa extends CI_Model{
         return $this->db->query("select * from tb_mahasiswa $where;");
     }
 
+   
 }

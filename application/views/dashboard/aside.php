@@ -36,13 +36,13 @@
           </a>
         </li>
         <li class="">
-          <a href="#">
-            <i class="fa fa-user"></i> <span>Guru</span>
+          <a href="<?= base_url().'mahasiswa/calon_siswa'?>">
+            <i class="fa fa-graduation-cap"></i> <span>Calon Siswa</span>
           </a>
         </li>
         <li class="">
           <a href="#">
-            <i class="fa fa-book"></i> <span>Jadwal Kelas</span>
+            <i class="fa fa-user"></i> <span>Guru</span>
           </a>
         </li>
         <li class="">

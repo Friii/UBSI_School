@@ -4,6 +4,7 @@ class Mahasiswa extends CI_Controller{
     public function __construct(){
         parent::__construct();
         $this->load->model('m_mahasiswa');
+        $this->load->model('m_calonsiswa');
     }
 
     public function index(){
@@ -27,8 +28,15 @@ class Mahasiswa extends CI_Controller{
         $this->load->view('dashboard/aside');
         $this->load->view('mahasiswa',  $data);
         $this->load->view('dashboard/footer'); 
-        
-    
+    }
+
+    public function calon_siswa(){
+        $data['calonsiswa'] = $this->m_calonsiswa->siswa()->
+        result();
+        $this->load->view('dashboard/header');
+        $this->load->view('dashboard/aside');
+        $this->load->view('calonsiswa',  $data);
+        $this->load->view('dashboard/footer'); 
     }
 
     public function tambah_aksi(){
@@ -45,6 +53,9 @@ class Mahasiswa extends CI_Controller{
         );
         $this->m_mahasiswa->input_data($data,'tb_mahasiswa'); 
         redirect('mahasiswa/index');
-
     }
+
+   
+
+   
 }

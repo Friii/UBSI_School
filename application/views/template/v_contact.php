@@ -15,22 +15,29 @@
     </div>
 <div class="container">
 
-    <form method="post">
-        <label for="nama">Nama Calon:</label>
-        <input type="text" id="namacalon" name="namacalon" placeholder="Nama Calon">
-        <br>
-        <label for="nomor">Nomor Telepon:</label>
-        <input type="text" id="nomortelepon" name="nomortelepon">
-        <br>
-        <label for="alamat">Alamat Email:</label>
-        <input type="text" id="alamatemail" name="alamatemail">
-        <br>
-        <label for="password">Password:</label>
-        <input type="text" id="password" name="password">
-        <br><br>
-        <input type="submit" name="submit" value="Submit">
-    </form>
-
-    </div>
+   <form action="<?= base_url()?>ubsi/savedata" method="post">
+<table width="600" border="1" cellspacing="5" cellpadding="5">
+    <tr>
+        <td>
+            First name
+        </td>
+        <td><input type="text" name="nama_calon"></td>
+    </tr>
+    <tr>
+        <td>kontak</td>
+        <td><input type="text" name="no_telepon"></td>
+    </tr>
+    <tr>
+        <td>email</td>
+        <td><input type="text" name="email_calon"></td>
+    </tr>
+    <tr>
+        <td>password</td>
+        <td><input type="password" name="password"></td>
+    </tr>
+    <tr>
+        <td><input type="submit" name="save"></td>
+    </tr>
+</table></form>
 
 
