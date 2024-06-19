@@ -7,10 +7,9 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/style_jur.css">
 </head>
 <body>
-    <div class="judul">
+    <div class="title-container">
         <h1>Kompetensi Keahlian</h1>
-        <h2>UBSI School Bekasi</h2>
-
+        <p>UBSI School Bekasi</p>
     </div>
     <div class="card-container">
         <div class="card">
@@ -55,22 +54,10 @@
 
     </div>
 
-    <footer id="hero-6">
-    <div class="kontak">
-        <div class="email-copy">
-        <div class="email">
-        <i class="fa-regular fa-envelope fa-2xl"></i>
+    <footer class="footer">
         <p>www.ubsischool.sch.ac.id</p>
-        </div>
-        <div class="copyright">
-            <p>Copyright &copy UBSI School. All rights reserved</p>
-        </div>
-        </div>
-    </div>
-</footer>
-</div>
-</div>
-<script src="<?= base_url()?>assets/js/script.js"></script>
+        <p>Copyright &copy; UBSI School. All rights reserved</p>
+    </footer>
     
     
     
