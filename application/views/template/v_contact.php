@@ -9,35 +9,52 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+<div class="container">
+    <nav>
+        <div class="logo">
+           <a href ="<?php echo base_url('ubsi/index')?>"><img src="<?php echo base_url()?>assets/img/logo.png" alt=""></a>
+        </div>
+        <div class="menu-icon" id="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul id="menu-list" class="hidden">
+                <li><a href="<?php echo base_url().'ubsi/index'?>">Akademik</a></li>
+                <li><a href="<?= base_url('ubsi/jurusan');?>">Program</a></li>
+                <li><a href="<?= base_url('ubsi/fasilitas'); ?>">Fasilitas</a></li>
+                <li><a href="<?php echo base_url().'ubsi/contact'?>">Hubungi</a></li>
+            </ul>
+            
+    </nav>
 
 <div class="anak-contact">
         <img src="<?php echo base_url();?>assets/img/Roadmap.png" alt="anakcontact">
     </div>
-<div class="container">
+    
+<div class="form-contact">
 
    <form action="<?= base_url()?>ubsi/savedata" method="post">
-<table width="600" border="1" cellspacing="5" cellpadding="5">
+<table width="600" border="none" cellspacing="5" cellpadding="5">
     <tr>
         <td>
-            First name
+            Nama Calon
         </td>
-        <td><input type="text" name="nama_calon"></td>
+        <td><input type="text" name="nama_calon" placeholder="Nama Calon" style = "width: 70%"></td>
     </tr>
     <tr>
-        <td>kontak</td>
-        <td><input type="text" name="no_telepon"></td>
+        <td>Kontak</td>
+        <td><input type="text" name="no_telepon" placeholder="Nomor telepon"  style = "width: 70%"></td>
     </tr>
     <tr>
-        <td>email</td>
-        <td><input type="text" name="email_calon"></td>
+        <td>Email</td>
+        <td><input type="text" name="email_calon" placeholder="Email"  style = "width: 70%"></td>
     </tr>
     <tr>
-        <td>password</td>
-        <td><input type="password" name="password"></td>
+        <td>Password</td>
+        <td><input type="password" name="password" placeholder="Password"  style = "width: 70%"></td>
     </tr>
     <tr>
         <td><input type="submit" name="save"></td>
     </tr>
-</table></form>
-
-
+</table>
+</form>
+</body>
