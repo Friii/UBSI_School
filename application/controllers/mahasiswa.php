@@ -55,6 +55,13 @@ class Mahasiswa extends CI_Controller{
         redirect('mahasiswa/index');
     }
 
+    public function guru(){
+        $this->load->view('dashboard/header');
+        $this->load->view('dashboard/aside');
+        $this->load->view('guru');
+        $this->load->view('dashboard/footer');
+    }
+
    
 
    

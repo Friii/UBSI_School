@@ -41,7 +41,7 @@
           </a>
         </li>
         <li class="">
-          <a href="#">
+          <a href="<?= base_url().'mahasiswa/guru'?>">
             <i class="fa fa-user"></i> <span>Guru</span>
           </a>
         </li>
