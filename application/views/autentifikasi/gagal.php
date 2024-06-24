@@ -27,7 +27,7 @@
                     <!-- 404 Error Text -->
                     <div class="text-center">
                         <?= $this->session->flashdata('pesan'); ?>
-                        <a href="<?= base_url('autentifikasi'); ?>" class="btn btn-secondary">&larr; Close</a>
+                        <a href="<?= base_url('autentifikasi'); ?>" class="btn btn-secondary">&larr; Cloose</a>
                     </div>
                 </div>
                 <!-- /.container-fluid -->
