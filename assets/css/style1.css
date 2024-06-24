@@ -61,21 +61,28 @@ main {
 	object-fit: cover; /* Ensures the image covers the container and maintains aspect ratio */
 }
 
-footer {
-	background: #1e3b72;
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #1e3b72;
 	color: #fff;
-	text-align: center;
-	padding: 10px 0;
+	padding: 30px;
+	width: 100%;
+	bottom: 0;
+	left: 0;
 }
 
-footer .container {
-	width: 90%;
-	margin: auto;
+.footer p {
+	margin: 0;
 }
 
-footer a {
-	color: #fff;
-	text-decoration: none;
+.footer .left {
+	margin-left: 20px;
+}
+
+.footer .right {
+	margin-right: 20px;
 }
 
 @media (max-width: 768px) {

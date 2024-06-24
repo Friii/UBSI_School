@@ -38,39 +38,36 @@
                     <p>Lab Audio/Video</p>
                 </div>
                 <div class=" grid-item">
-                        <div class="img-container">
-                            <img src="<?php echo base_url() ?>assets/img/masjid.jpeg" alt="" />
-                        </div>
-                        <p>Masjid</p>
+                    <div class="img-container">
+                        <img src="<?php echo base_url() ?>assets/img/masjid.jpeg" alt="" />
                     </div>
-                    <div class="grid-item">
-                        <div class="img-container">
-                            <img src="<?php echo base_url() ?>assets/img/bengkel.jpeg" alt="" />
-                        </div>
-                        <p>Lab Bengkel</p>
-                    </div>
-                    <div class="grid-item">
-                        <div class="img-container">
-                            <img src="<?php echo base_url() ?>assets/img/lab kom.jpeg" alt="" />
-                        </div>
-                        <p>LabKom</p>
-                    </div>
-                    <div class="grid-item">
-                        <div class="img-container">
-                            <img src="<?php echo base_url() ?>assets/img/kantin.jpeg" alt="" />
-                        </div>
-                        <p>Kantin</p>
-                    </div>
+                    <p>Masjid</p>
                 </div>
+                <div class="grid-item">
+                    <div class="img-container">
+                        <img src="<?php echo base_url() ?>assets/img/bengkel.jpeg" alt="" />
+                    </div>
+                    <p>Lab Bengkel</p>
+                </div>
+                <div class="grid-item">
+                    <div class="img-container">
+                        <img src="<?php echo base_url() ?>assets/img/lab kom.jpeg" alt="" />
+                    </div>
+                    <p>LabKom</p>
+                </div>
+                <div class="grid-item">
+                    <div class="img-container">
+                        <img src="<?php echo base_url() ?>assets/img/kantin.jpeg" alt="" />
+                    </div>
+                    <p>Kantin</p>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <div class="container">
-            <p>Copyright &copy; 2024 UBSI School. All rights reserved</p>
-            <p>
-                <a href="mailto:info@ubsischool.sch.id">info@ubsischool.sch.id</a>
-            </p>
-        </div>
+
+    <footer class="footer">
+        <p>www.ubsischool.sch.ac.id</p>
+        <p>Copyright &copy; UBSI School. All rights reserved</p>
     </footer>
 
 </body>
