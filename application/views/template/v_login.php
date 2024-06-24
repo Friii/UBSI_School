@@ -31,6 +31,7 @@
     <a href="tambah">Daftar Anggota Baru</a>
     </div>
     <div class="right">
+        
     <a href ="<?php echo base_url('ubsi/index')?>"><img src="<?php echo base_url()?>assets/img/logo1.png" alt=""></a>
     <h1>UBSI SCHOOL</h1>
     </div>
