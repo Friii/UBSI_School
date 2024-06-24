@@ -3,9 +3,11 @@ class Autentifikasi extends CI_Controller
 {
     public function index()
     {
+        $this->load->model('ModelUser');
+
         // Jika statusnya sudah login, maka tidak bisa mengakses halaman login alias dikembalikan ke tampilan user
         if ($this->session->userdata('email')) {
-            redirect('user');
+            redirect('mahasiswa');
         }
 
         $this->form_validation->set_rules('email', 'Alamat Email', 'required|trim|valid_email', [
@@ -20,9 +22,9 @@ class Autentifikasi extends CI_Controller
             $data['judul'] = 'Login';
             $data['user'] = '';
 
-            $this->load->view('templates/aute_header', $data);
+            $this->load->view('template/aute_header', $data);
             $this->load->view('autentifikasi/login');
-            $this->load->view('templates/aute_footer');
+            $this->load->view('template/aute_footer');
         } else {
             $this->_login();
         }
@@ -48,12 +50,12 @@ class Autentifikasi extends CI_Controller
                     $this->session->set_userdata($data);
 
                     if ($user['role_id'] == 1) {
-                        redirect('admin');
+                        redirect('mahasiswa');
                     } else {
                         if ($user['image'] == 'default.jpg') {
                             $this->session->set_flashdata('pesan', '<div class="alert alert-info alert-message" role="alert">Silahkan Ubah Profile Anda untuk Ubah Photo Profil</div>');
                         }
-                        redirect('admin/index');
+                        redirect('mahasiswa');
                     }
                 } else {
                     $this->session->set_flashdata('pesan', '<div class="alert alert-danger alert-message" role="alert">Password salah!!</div>');
@@ -104,9 +106,9 @@ class Autentifikasi extends CI_Controller
 
         if ($this->form_validation->run() == false) {
             $data['judul'] = 'Registrasi Member';
-            $this->load->view('templates/aute_header', $data);
+            $this->load->view('template/aute_header', $data);
             $this->load->view('autentifikasi/registrasi');
-            $this->load->view('templates/aute_footer');
+            $this->load->view('template/aute_footer');
         } else {
             $email = $this->input->post('email', true);
             $data = [
