@@ -13,7 +13,7 @@ class Autentifikasi extends CI_Controller
             'valid_email' => 'Email Tidak Benar!!'
         ]);
         $this->form_validation->set_rules('password', 'Password', 'required|trim', [
-            'required' => 'Password Harus diisi'
+            'required' => 'Password Harus di isi'
         ]);
 
         if ($this->form_validation->run() == false) {
