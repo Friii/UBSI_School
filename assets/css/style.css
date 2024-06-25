@@ -115,8 +115,11 @@ nav ul{
     margin: 2px;
 }
 
-.form-contact {
-    width: 20%;
+.form-contact, .info-section {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    margin-right: 5px;
 }
 
 .logo {
@@ -606,6 +609,83 @@ nav ul li a:hover{
     
     
 
+}
+
+.form-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    flex: 1;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    flex: 0 0 120px;
+    margin-right: 10px;
+}
+
+.form-group .input-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.input-container i {
+    margin-right: 10px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 8px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+
+.info-section {
+    flex: 1;
+    min-width: 300px;
+    padding-left: 5px; /* Jarak antara form dan info section */
+    padding-top: 50px;
+}
+
+
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text {
+    font-size: 21px;
+    line-height: 1.5;
+}
+
+.textt{
+    font-size: 21px;
+    line-height: 1.5;
 }
 
 

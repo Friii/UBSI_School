@@ -19,7 +19,7 @@
             </div>
             <ul id="menu-list" class="hidden">
                 <li><a href="<?php echo base_url().'ubsi/index'?>">Akademik</a></li>
-                <li><a href="<?= base_url('ubsi/jurusan');?>">Program</a></li>
+                <li><a href="<?= base_url('ubsi/jurusan');?>">Kompotensi Keahlian</a></li>
                 <li><a href="<?= base_url('ubsi/fasilitas'); ?>">Fasilitas</a></li>
                 <li><a href="<?php echo base_url().'ubsi/contact'?>">Hubungi</a></li>
             </ul>
@@ -29,32 +29,52 @@
 <div class="anak-contact">
         <img src="<?php echo base_url();?>assets/img/Roadmap.png" alt="anakcontact">
     </div>
-    
-<div class="form-contact">
 
-   <form action="<?= base_url()?>ubsi/savedata" method="post">
-<table width="600" border="none" cellspacing="5" cellpadding="5">
-    <tr>
-        <td>
-            Nama Calon
-        </td>
-        <td><input type="text" name="nama_calon" placeholder="Nama Calon" style = "width: 70%"></td>
-    </tr>
-    <tr>
-        <td>Kontak</td>
-        <td><input type="text" name="no_telepon" placeholder="Nomor telepon"  style = "width: 70%"></td>
-    </tr>
-    <tr>
-        <td>Email</td>
-        <td><input type="text" name="email_calon" placeholder="Email"  style = "width: 70%"></td>
-    </tr>
-    <tr>
-        <td>Password</td>
-        <td><input type="password" name="password" placeholder="Password"  style = "width: 70%"></td>
-    </tr>
-    <tr>
-        <td><input type="submit" name="save"></td>
-    </tr>
-</table>
-</form>
+    <div class="contact-container">
+        <div class="form-contact">
+            <form action="<?= base_url()?>ubsi/savedata" method="post">
+                <div class="form-container">
+                    <div class="form-group">
+                        <label for="nama_calon">Nama Calon</label>
+                        <div class="input-container">
+                            <i class="fa fa-user"></i>
+                            <input type="text" id="nama_calon" name="nama_calon" placeholder="Nama Calon">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="no_telepon">Nomor Telepon</label>
+                        <div class="input-container">
+                            <i class="fa fa-phone"></i>
+                            <input type="text" id="no_telepon" name="no_telepon" placeholder="Nomor Telepon">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email_calon">Email</label>
+                        <div class="input-container">
+                            <i class="fa fa-envelope"></i>
+                            <input type="text" id="email_calon" name="email_calon" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="input-container">
+                            <i class="fa fa-lock"></i>
+                            <input type="password" id="password" name="password" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="submit-button" name="save" value="Kirim">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="info-section">
+            <p class="text">Lengkapi data <strong>Nama Calon</strong> dan <strong>Nomor Telepon</strong> aktif yang dapat dihubungi.</p>
+            <p class="textt">Pastikan email UBSI School tidak berada di folder <strong>SPAM/JUNK</strong>.</p>
+            
+        </div>
+    </div>
+    
+    
+
 </body>
