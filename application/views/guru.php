@@ -5,7 +5,7 @@
         <small>Control panel</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="index"><i class="fa fa-dashboard"></i> Home</a></li>
         <li class="active">Dashboard</li>
       </ol>
     </section>
@@ -29,9 +29,10 @@
           <td><?= $no++ ?></td>
           <td><?= $mhs->nama_guru ?></td>
           <td><?= $mhs->nip_guru ?></td>
-          <td><?= $mhs->foto ?></td>
+          <td><img src="<?= base_url();?>assets/img/upload/<?= $mhs->foto?>"width="90" height="110"></td>
           <td><?= $mhs->jabatan ?></td>
           <td><?= $mhs->pelajaran ?></td>
+          <td><a href="<?php echo base_url('mahasiswa/detail/'. $mhs->id.'')?>"><div class="btn btn-success btn-sm"><i class="fa fa-search-plus"></i></div></td>
           <td onclick="javascript: return confirm('Anda Yakin Ingin Menghapus data')"><a href="<?php echo base_url('mahasiswa/hapus_guru/'. $mhs->id.'')?>" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></a></td>
           <td><a href="<?php echo base_url('mahasiswa/edit_guru/'. $mhs->id.'')?>"><div class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></div></td>
         </tr>
@@ -45,39 +46,48 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title" id="exampleModalLabel">FORM INPUT DATA SISWA</h4>
+        <h4 class="modal-title" id="exampleModalLabel">FORM INPUT DATA GURU</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <form method="post"action="<?php echo base_url().'mahasiswa/tambah_aksi';?>">
+
+        <?php echo form_open_multipart('mahasiswa/tambah_guru'); ?>
+        
       <div class="form-group">
-        <label for="nama">Nama Siswa</label>
-        <input type="text" id="nama" name="nama" class="form-control">
+        <label for="nama_guru">Nama Guru</label>
+        <input type="text" id="nama_guru" name="nama_guru" class="form-control" >
       </div>
       <div class="form-group">
-        <label for="nip">NIP</label>
-        <input type="text" id="nip" name="nip" class="form-control">
+        <label for="nip_guru">NIP</label>
+        <input type="text" id="nip_guru" name="nip_guru" class="form-control">
       </div>
       <div class="form-group">
         <label for="tgl_lahir">Tanggal Lahir</label>
         <input type="date" id="tgl_lahir" name="tgl_lahir" class="form-control">
       </div>
       <div class="form-group">
-            <label for="jurusan">Jurusan</label>
-            <select class="form-control" name="jurusan">
-            <option>Teknik Kendaraan Ringan</option>    
-            <option>Teknik Jaringan Komputer</option>    
-            <option>Teknik Instalasi Tenaga Listrik</option>    
-            <option>Teknik Audio Video</option>    
-            </select>
-        </div>
-
+        <label for="alamat">Alamat</label>
+        <input type="text" id="alamat" name="alamat" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="jabatan">Jabatan</label>
+        <input type="text" class="form-control form-control-user" id="jabatan" name="jabatan" >
+      </div>
+      <div class="form-group">
+        <label for="pelajaran">Pelajaran</label>
+        <input type="text" class="form-control form-control-user" id="pelajaran" name="pelajaran" >
+      </div>
+      <div class="form-group">
+        <label for="foto">Foto</label>
+        <input type="file" class="form-control form-control-user" id="foto" name="foto" size="20" >
+      </div>
       <button type="reset" class="btn btn-danger" data-dismiss="modal">Reset</button>
         <button type="submit" class="btn btn-primary">Simpan</button>
       
-    </form>
+    <?php echo form_close(); ?>
+    
       </div>
       
     </div>

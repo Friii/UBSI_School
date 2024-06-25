@@ -5,7 +5,7 @@
         <small>Control panel</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="index"><i class="fa fa-dashboard"></i> Home</a></li>
         <li class="active">Dashboard</li>
       </ol>
     </section>
@@ -16,7 +16,7 @@
         <tr>
           <th>NO</th>
           <th>NAMA SISWA</th>
-          <th>NIP</th>
+          <th>NIS</th>
           <th>TANGGAL LAHIR</th>
           <th>JURUSAN</th>
           <th colspan="2">AKSI</th>
@@ -55,7 +55,7 @@
         <input type="text" id="nama" name="nama" class="form-control">
       </div>
       <div class="form-group">
-        <label for="nip">NIP</label>
+        <label for="nip">NIS</label>
         <input type="text" id="nip" name="nip" class="form-control">
       </div>
       <div class="form-group">

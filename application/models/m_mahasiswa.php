@@ -38,5 +38,9 @@ class M_mahasiswa extends CI_Model{
         $this->db->where($where);
         $this->db->update($table, $data);
     }
-   
+
+    public function user($id = NULL){
+        $query = $this->db->get_where('tb_user', array('id' => $id))->row();
+        return $query;
+     }
 }

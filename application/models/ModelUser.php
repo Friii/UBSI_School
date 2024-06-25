@@ -33,4 +33,13 @@ class ModelUser extends CI_Model
         $this->db->limit(10, 0);
         return $this->db->get();
     }
+
+    public function user(){
+        return $this->db->get('tb_user');
+    }
+
+    public function jumlah_admin($where=''){
+        return $this->db->query("select * from tb_user $where;");
+    }
+    
 }

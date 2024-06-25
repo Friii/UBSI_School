@@ -10,11 +10,20 @@ class Mahasiswa extends CI_Controller{
     }
 
     public function index(){
+        $data['user'] = $this->ModelUser->user()->result();
+        $jumlah= $this->m_guru->jumlah_guru();
+        $calon=$this->m_calonsiswa->jumlah_calon();
         $ar = $this->m_mahasiswa->jumlah_siswa();
+        $ad=$this->ModelUser->jumlah_admin();
         $siswa = $ar->num_rows();
-
+        $guru= $jumlah->num_rows();
+        $calonn=$calon->num_rows();
+        $admin=$ad->num_rows();
         $data = array(
-            'jumlah_siswa' => $siswa
+            'jumlah_siswa' => $siswa,
+            'jumlah_guru' => $guru,
+            "jumlah_calon"=>$calonn,
+            "jumlah_admin"=>$admin
         );
         $this->load->view('dashboard/header');
         $this->load->view('dashboard/aside');
@@ -40,6 +49,7 @@ class Mahasiswa extends CI_Controller{
         $this->load->view('calonsiswa',  $data);
         $this->load->view('dashboard/footer'); 
     }
+    
     public function guru(){
         $data['guru'] = $this->m_guru->guru()->
         result();
@@ -64,7 +74,7 @@ class Mahasiswa extends CI_Controller{
             'jurusan'       => $jurusan,
         );
         $this->m_mahasiswa->input_data($data,'tb_mahasiswa'); 
-        redirect('mahasiswa/index');
+        redirect('mahasiswa/siswa');
     }
 
     public function tambah_calon(){
@@ -82,10 +92,43 @@ class Mahasiswa extends CI_Controller{
         redirect('mahasiswa/calon_siswa');
     }
 
-    
+    public function tambah_guru(){
+        $nama_guru   = $this->input->post('nama_guru');
+        $nip_guru  = $this->input->post('nip_guru');
+        $foto   = $_FILES['foto'];
+        $jabatan   = $this->input->post('jabatan');
+        $pelajaran   = $this->input->post('pelajaran');
+        $tgl_lahir = $this->input->post('tgl_lahir');
+        $alamat = $this->input->post('alamat');
 
-   
-    
+        if($foto=''){}else{
+            $config['upload_path']          = './assets/img/upload/';
+            $config['allowed_types']        = 'gif|jpg|png';
+            $config['max_size']             = 10000;
+            $config['max_width']            = 10000;
+            $config['max_height']           = 10000;
+
+            $this->load->library('upload', $config);
+            if(!$this->upload->do_upload('foto')){
+                echo $this->upload->display_errors();
+                die();
+            }else{
+                $foto= $this->upload->data("file_name");
+            }
+        }
+        $data = array(
+            'nama_guru'          => $nama_guru,
+            'nip_guru'           => $nip_guru,
+            'tgl_lahir'           => $tgl_lahir,
+            'alamat'              => $alamat,
+            'jabatan'            => $jabatan,
+            'pelajaran'          => $pelajaran,
+            'foto'               => $foto
+            
+        );
+        $this->m_guru->input_data_guru($data,'tb_guru'); 
+        redirect('mahasiswa/guru');
+    }
 
     public function hapus($id){
         $where = array('id' => $id);
@@ -108,8 +151,6 @@ class Mahasiswa extends CI_Controller{
     public function edit($id){
         $where= array('id'=>$id);
         $data['mahasiswa']=$this->m_mahasiswa->edit_data($where, 'tb_mahasiswa')->result();
-
-
         $this->load->view('dashboard/header');
         $this->load->view('dashboard/aside');
         $this->load->view('edit',$data);
@@ -119,8 +160,6 @@ class Mahasiswa extends CI_Controller{
     public function edit_calon($id){
         $where= array('id'=>$id);
         $data['mahasiswa']=$this->m_mahasiswa->edit_data($where, 'tb_calon_siswa')->result();
-
-
         $this->load->view('dashboard/header');
         $this->load->view('dashboard/aside');
         $this->load->view('edit_calon',$data);
@@ -130,11 +169,9 @@ class Mahasiswa extends CI_Controller{
     public function edit_guru($id){
         $where= array('id'=>$id);
         $data['mahasiswa']=$this->m_mahasiswa->edit_data($where, 'tb_guru')->result();
-
-
         $this->load->view('dashboard/header');
         $this->load->view('dashboard/aside');
-        $this->load->view('edit_calon',$data);
+        $this->load->view('edit_guru',$data);
         $this->load->view('dashboard/footer'); 
     }
 
@@ -178,7 +215,40 @@ class Mahasiswa extends CI_Controller{
         redirect('mahasiswa/calon_siswa');
     }
 
-   
+    public function update_guru(){
+        $id= $this->input->post('id');
+        $nama_guru= $this->input->post('nama_guru');
+        $nip_guru= $this->input->post('nip_guru');
+        $tgl_lahir= $this->input->post('tgl_lahir');
+        $alamat= $this->input->post('alamat');
+        $foto= $this->input->post('foto');
+        $jabatan= $this->input->post('jabatan');
+        $pelajaran= $this->input->post('pelajaran');
 
-   
+        $data = array(
+            'nama_guru' => $nama_guru,
+            'nip_guru' => $nip_guru,
+            'tgl_lahir' => $tgl_lahir,
+            'alamat' => $alamat,
+            'jabatan' => $jabatan,
+            'pelajaran' => $pelajaran,
+            'foto' => $foto
+        );
+        $where = array(
+            'id' => $id
+        );
+
+        $this->m_mahasiswa->update_dataa($where,$data,'tb_guru');
+        redirect('mahasiswa/guru');
+    }
+
+    public function detail($id){
+        $this->load->model('m_guru');
+        $detail= $this->m_guru->detail($id);
+        $data['detail'] = $detail;
+        $this->load->view('dashboard/header');
+        $this->load->view('dashboard/aside');
+        $this->load->view('detail',$data);
+        $this->load->view('dashboard/footer'); 
+    }
 }

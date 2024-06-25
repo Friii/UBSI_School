@@ -1,4 +1,4 @@
-alert('apalsssu');
+
 const menuIcon = document.getElementById('menu-icon');
 const menuList= document.getElementById('menu-list');
 

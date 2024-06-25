@@ -4,10 +4,10 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="<?php echo base_url()?>assets/dashboard/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src="<?php echo base_url()?>assets/img/user.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Alexander Pierce</p>
+          <p><?php echo $this->session->userdata('email'); ?></p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
@@ -37,22 +37,12 @@
         </li>
         <li class="">
           <a href="<?= base_url().'mahasiswa/calon_siswa'?>">
-            <i class="fa fa-graduation-cap"></i> <span>Calon Siswa</span>
+            <i class="fa fa-envelope"></i> <span>Calon Siswa</span>
           </a>
         </li>
         <li class="">
           <a href="<?= base_url().'mahasiswa/guru'?>">
             <i class="fa fa-user"></i> <span>Guru</span>
-          </a>
-        </li>
-        <li class="">
-          <a href="#">
-            <i class="fa fa-university"></i> <span>Jurusan</span>
-          </a>
-        </li>
-        <li class="">
-          <a href="#">
-            <i class="fa fa-lock"></i> <span>Ganti Password</span>
           </a>
         </li>
         <li class="">
