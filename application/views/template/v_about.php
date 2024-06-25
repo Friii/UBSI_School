@@ -11,19 +11,21 @@
 </section>
 <!-- Membuat bagian landing page -->
 <section id="hero-2">
-    <div class="visi">
-        <h3>VISI</h3>
-        <p>Menjadikan siswa UBSI School menjadi manusia yang menguasai</p> 
-        <p>teknologi pada masanya dan mentalnya dengan akhlak mulia</p>
+    <div class="elemen">
+        <div class="visi">
+            <h3>VISI</h3>
+            <p>Menjadikan siswa UBSI School menjadi manusia yang menguasai</p> 
+            <p>teknologi pada masanya dan mentalnya dengan akhlak mulia</p>
         </div>
         <div class="misi">
-        <h3>Misi</h3>
-        <ul>
-        <li><p>Pelaksanaan kegiatan selalu berdasarkan ketuhanan yang Maha Esa.</p></li>
-        <li><p>Menjadikan lingkungan sekolah sebagai lingkungan wajib disiplin</p></li>
-        <li><p>Menciptakan pola santun sesuai kaidah masyarakat</p></li>
-        <li><p>Menghargai ide dan kreatifitas seluruh komponen sekolah yangg bersifat positif</p></li>
-        </ul>    
+            <h3>Misi</h3>
+            <ul>
+                <li><p>Pelaksanaan kegiatan selalu berdasarkan ketuhanan yang Maha Esa.</p></li>
+                <li><p>Menjadikan lingkungan sekolah sebagai lingkungan wajib disiplin</p></li>
+                <li><p>Menciptakan pola santun sesuai kaidah masyarakat</p></li>
+                <li><p>Menghargai ide dan kreatifitas seluruh komponen sekolah yangg bersifat positif</p></li>
+            </ul>    
+        </div>
     </div>
     <div class="ngaji">
     <img src="<?php echo base_url()?>assets/img/ngaji.png" alt="ngaji">

@@ -19,6 +19,7 @@
           <th>NIP</th>
           <th>TANGGAL LAHIR</th>
           <th>JURUSAN</th>
+          <th colspan="2">AKSI</th>
         </tr>
         <?php 
           $no= 1;
@@ -29,6 +30,8 @@
           <td><?= $mhs->nip ?></td>
           <td><?= $mhs->tgl_lahir ?></td>
           <td><?= $mhs->jurusan ?></td>
+          <td onclick="javascript: return confirm('Anda Yakin Ingin Menghapus data')"><a href="<?php echo base_url('mahasiswa/hapus/'. $mhs->id.'')?>" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></a></td>
+          <td><a href="<?php echo base_url('mahasiswa/edit/'. $mhs->id.'')?>"><div class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></div></td>
         </tr>
         <?php endforeach; ?>
         
@@ -62,9 +65,10 @@
       <div class="form-group">
             <label for="jurusan">Jurusan</label>
             <select class="form-control" name="jurusan">
-            <option>Sistem Informasi</option>    
-            <option>Teknik Informasi</option>    
-            <option>Teknik Komputer</option>    
+            <option>Teknik Kendaraan Ringan</option>    
+            <option>Teknik Jaringan Komputer</option>    
+            <option>Teknik Instalasi Tenaga Listrik</option>    
+            <option>Teknik Audio Video</option>    
             </select>
         </div>
 

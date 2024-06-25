@@ -56,7 +56,7 @@
           </a>
         </li>
         <li class="">
-          <a href="#">
+          <a href="<?= base_url().'autentifikasi/logout'?>">
             <i class="fa fa-sign-out"></i> <span>Logout</span>
           </a>
         </li>

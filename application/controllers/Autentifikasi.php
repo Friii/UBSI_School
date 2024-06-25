@@ -20,7 +20,7 @@ class Autentifikasi extends CI_Controller
 
         if ($this->form_validation->run() == false) {
             $data['judul'] = 'Login';
-            $data['user'] = '';
+            $data['tb_user'] = '';
 
             $this->load->view('template/aute_header', $data);
             $this->load->view('autentifikasi/login');
@@ -92,7 +92,7 @@ class Autentifikasi extends CI_Controller
         // Membuat rule untuk inputan email agar tidak boleh kosong, tidak ada spasi, format email harus valid, dan email belum pernah dipakai sama user lain
         // Membuat pesan error dengan bahasa sendiri yaitu jika format email tidak benar maka pesannya 'Email Tidak Benar!!'.
         // Jika email belum diisi, maka pesannya adalah 'Email Belum diisi', dan jika email yang diinput sudah dipakai user lain, maka pesannya 'Email Sudah Terdaftar'
-        $this->form_validation->set_rules('email', 'Alamat Email', 'required|trim|valid_email|is_unique[user.email]', [
+        $this->form_validation->set_rules('email', 'Alamat Email', 'required|trim|valid_email|is_unique[tb_user.email]', [
             'valid_email' => 'Email Tidak Benar!!',
             'required' => 'Email Belum diisi!!',
             'is_unique' => 'Email Sudah Terdaftar!'

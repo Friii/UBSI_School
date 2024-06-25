@@ -184,6 +184,17 @@ nav ul li a:hover{
     line-height: 15px;
 }
 
+.elemen{
+    transform: translate(30px);
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+
+.muncul{
+    transform: translate(0px);
+    opacity: 1;
+}
+
 .anak img{
     display: flex;
     width: 508px;
