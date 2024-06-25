@@ -4,13 +4,14 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     color: black;
+
 }
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 70vh;
     background :#fffff;
 }
 
@@ -19,6 +20,12 @@ body {
     background: white;
     border-radius: 10px;
     color: #fff;
+}
+
+.group input {
+    padding: 12px 12px 12px 55px;
+    width: 100%;
+
 }
 
 .wrapper h1{

@@ -14,28 +14,28 @@
                
                         <form class="user" method="post" action="<?= base_url('autentifikasi/registrasi'); ?>">
                             <div class="input-box">
-                                <input type="text" class="form-control form-control-user" id="nama" name="nama" placeholder="Nama Lengkap" value="<?= set_value('nama'); ?>">
+                                <input type="text" class="form-control form-control-user" style="width: 100%; padding: 12px 12px 10px 55px;" id="nama" name="nama" placeholder="Nama Lengkap" value="<?= set_value('nama'); ?>">
                                 <?= form_error('nama', '<small class="text-danger pl-3">', '</small>'); ?>
                             </div>
                             <div class="input-box">
-                                <input type="text" class="form-control form-control-user" id="email" name="email" placeholder="Alamat Email" value="<?= set_value('email'); ?>">
+                                <input type="text" class="form-control form-control-user" style="width: 100%; padding: 12px 12px 10px 55px;" id="email" name="email" placeholder="Alamat Email" value="<?= set_value('email'); ?>">
                                 <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
                             </div>
                             <div class="input-box">
                                 <div class="col-sm-6 mb-3 mb-sm-0">
-                                    <input type="password" class="form-control form-control-user" id="password1" name="password1" placeholder="Password">
+                                    <input type="password" class="form-control form-control-user" style="width: 100%; padding: 12px 12px 10px 55px;" id="password1" name="password1" placeholder="Password">
                                     <?= form_error('password1', '<small class="text-danger pl-3">', '</small>'); ?>
                                 </div>
                                 <div class="input-box">
-                                    <input type="password" class="form-control form-control-user" id="password2" name="password2" placeholder="Ulangi Password">
+                                    <input type="password" class="form-control form-control-user" style="width: 100%; padding: 12px 12px 10px 55px;" id="password2" name="password2" placeholder="Ulangi Password">
                                     <?= form_error('password2', '<small class="text-danger pl-3">', '</small>'); ?>
                                 </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-user btn-block">
+                                                            <button type="submit" class="btn btn-primary btn-user btn-block">
                                 Daftar Menjadi Member
                             </button>
+
+                            </div>
                         </form>
-                        <hr>
                         <div class="button-login">
                             Sudah Menjadi Member?<a class="small" href="<?= base_url('autentifikasi'); ?>"> Login!</a>
                         </div>
