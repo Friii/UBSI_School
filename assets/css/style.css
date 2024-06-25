@@ -81,7 +81,6 @@ button, label, p, input {
 }
 
 button{
-    display: inline flex;
     width: 100%;
     cursor: pointer;
     margin-top: 20px;
