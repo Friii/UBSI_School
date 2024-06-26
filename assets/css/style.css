@@ -198,10 +198,10 @@ nav ul li a:hover{
 .anak img{
     display: flex;
     width: 508px;
-    height: 300px;
+    height: 295px;
     position: relative;
     margin-left: 700px;
-    bottom: 218px;    
+    bottom: 214px;    
 }
 .anak-contact img{
     width: 708px;
@@ -253,7 +253,7 @@ nav ul li a:hover{
 #hero-3{
     background-color: #1E3B72;
     bottom: 340px;
-    left: 550px;
+    left: 510px;
     position: relative;
     width: 400px;
     height: 100px;
@@ -327,21 +327,22 @@ nav ul li a:hover{
     background-color:#1E3B72;
     height: 68vh;
     position: relative;
-    bottom: 250px;
+    bottom: 280px;
     width: 100%;
 }
 
 .judul{
     display: flex;
     position: relative;
-    margin-right: 50px;
+    left: 20px;
+    margin-right: 10px;
 }
 
 .lines{
     width: 40%;
     height: 35px;
     position: relative;
-    left: 445px;
+    left: 400px;
     top: 40px;
 }
 
@@ -366,7 +367,7 @@ nav ul li a:hover{
 
 .judul h2{
     position: relative;
-    left: 45%;
+    left: 43%;
     color: #ffffff;
 }
 
@@ -385,11 +386,11 @@ nav ul li a:hover{
 
 .prestasi{
     display: grid;
-    gap: 8rem;
+    gap: 6rem;
     grid-template-columns: repeat(3,1fr);
     margin: 80px;
     position: relative;
-    right: 70%;
+    right: 88%;
     bottom: 120px;
     color: #ffffff;
     
@@ -397,6 +398,7 @@ nav ul li a:hover{
 
 .prestasi img{
     width: 350px;
+    height: 200px;
     position: relative;
     
 }
@@ -437,6 +439,21 @@ nav ul li a:hover{
 
 .tentang a{
     color : black;
+}
+
+.penjelasan{
+    transform: translate(30px);
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+
+.muncul2{
+    transform: translate(0px);
+    opacity: 1;
+    -webkit-transform: translate(0px);
+    -moz-transform: translate(0px);
+    -ms-transform: translate(0px);
+    -o-transform: translate(0px);
 }
 
 .lokasi{

@@ -3,7 +3,7 @@
     <h2>KEGIATAN BELAJAR MENGAJAR</h2>
     <p> Guru menyampaikan materi pembelajaran kepada siswa dengan menggunakan <br></br> berbagai metode seperti ceramah, diskusi kelompok, presentasi, dan aktivitas praktik.</p>
     <p>antusias diikuti ratusan siswa</p>
-    <a href="#">Daftar Sekarang</a>
+    <a href="<?= base_url('ubsi/contact')?>">Daftar Sekarang</a>
     <div class="anak">
         <img src="<?php echo base_url();?>assets/img/anak.jpeg" alt="anak">
     </div>
@@ -83,7 +83,7 @@
 <div class="tentang-lokasi">
     <div class="tentang">
     <h2>Tentang Kami</h2>
-    <p>Sekolah Kejuruan di Bekasi,Jawa Barat yang berlokasi di Jl. Lkr.Utara No.8,Perwira,Kec Bekasi Utara,Kota Bks,Jawa Barat UBSI SCHOOL bertekad mencapai perbaikan yang berkesinambungan berdasarkan sistem manajemen mutu ISO 9001:2008. Telp. 031-8292038 FAX. 031-8292039. Emaill : info@ubsischool.sch.id</p>
+    <p class="penjelasan">Sekolah Kejuruan di Bekasi,Jawa Barat yang berlokasi di Jl. Lkr.Utara No.8,Perwira,Kec Bekasi Utara,Kota Bks,Jawa Barat UBSI SCHOOL bertekad mencapai perbaikan yang berkesinambungan berdasarkan sistem manajemen mutu ISO 9001:2008. Telp. 031-8292038 FAX. 031-8292039. Emaill : info@ubsischool.sch.id</p>
     <a href=""><i class="fa-brands fa-instagram fa-2xl"></i></a>
     <a href=""><i class="fa-brands fa-youtube fa-2xl"></i></a>
     </div>
